@@ -1,0 +1,170 @@
+/* styles.css */
+
+/* Apply the background image to the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: url('images/img.jpg') no-repeat center center fixed; /* Add your image path here */
+    background-size: cover;
+    color: #fff; /* Text color for readability */
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #004d40;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #00332c;
+    border-radius: 5px;
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1100px;
+    margin: 60px auto 20px; /* Adjusted for navbar spacing */
+}
+
+/* Form container styles */
+form.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Form heading styles */
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Form label styles */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Link styles */
+p {
+    margin-top: 15px;
+    color: #ddd;
+}
+
+p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Table styling */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.user-table th, .user-table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+.user-table thead {
+    background-color: #004d40;
+    color: #fff;
+}
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tbody tr:hover {
+    background-color: #0000ff;
+}
+
+/* Add responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .user-table {
+        font-size: 14px;
+    }
+}
