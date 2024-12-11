@@ -33,7 +33,7 @@ public class UserController {
         
         // Replace with actual admin credentials check or fetch from DB
         String defaultAdminUsername = "admin";
-        String defaultAdminPassword = "admin123";
+        String defaultAdminPassword = "admin";
 
         if (adminUsername.equals(defaultAdminUsername) && adminPassword.equals(defaultAdminPassword)) {
             return "redirect:/admin-dashboard";
